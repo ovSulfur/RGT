@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+    .w3-theme {color:#f0d7d7 !important; background-color:#240935 !important}
+    .w3-theme-d2 {color:#fff !important; background-color:#100124 !important}
+    .w3-theme-d3 {color:#000 !important; background-color:#9c216d !important}
+    .w3-allerta {
+        font-family: 'Allena', serif;
+    }
+    .w3-tangerine {
+  font-family: 'Tangerine', serif;}
+    .w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;}
+    body {
+        background-color: #f5f5dc;
+    }
+    #tex {
+        color: antiquewhite;
+    }
+    #top {
+        background-image: linear-gradient(#240935, #371464);
+        color: #f0d7d7;
+    }
+</style>
+<body>
+<div id="top" class="w3-container w3-center">
+ <h1 class="w3-myfont">Дизайн, как искусство.</h1>
+</div>
+<div id="img" class="w3-display-container">
+ <img src="images/exk.jpg" alt="color" width="100%">
+ <div id="tex" class="w3-padding w3-display-middle"><h3 class="w3-allerta">Веб-дизайн — вид графического дизайна, направленный на разработку и оформление объектов информационной среды Интернета, призванный обеспечить им высокие потребительские свойства и эстетические качества. Подобная трактовка отделяет веб-дизайн от веб-программирования, подчёркивает специфику предметной деятельности веб-дизайнера, позиционирует веб-дизайн как вид графического дизайна.</h3></div>
+</div>
+
+<div id="text" class="w3-container w3-theme-d3 w3-center w3-border-red w3-leftbar">   
+<h3>веб-дизайн состоит из:</h3>
+
+<div id="London" class="city" style="display:none">
+    <h2>UX-дизайн</h2>
+    <p>проектирование интерфейсов сайтов и приложений на основе пользовательского опыта</p>
+  </div>
+  
+  <div id="Paris" class="city" style="display:none">
+    <h2>UI-дизайн</h2>
+    <p>процесс визуализации прототипа, спроектированного на основе пользовательского опыта</p>
+  </div>
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button w3-theme" onclick="openCity('London')">UX-дизайн</button>
+    <button class="w3-bar-item w3-button w3-theme" onclick="openCity('Paris')">UI-дизайн</button>
+  </div>
+
+</div>
+
+<ul class="w3-ul w3-card-4 w3-theme w3-center">
+    <li><h3>инструменты веб разработчика</h3></li>
+    <li>Adobe</li>
+    <li>Sketch</li>
+  </ul>
+
+
+<div id="footer" class="w3-container w3-center w3-theme-d2">
+    <h4 class="w3-myfont ">Fusce non maximus ligula. Donec faucibus volutpat feugiat. Maecenas ornare egestas neque nec ornare. Nunc at libero non urna euismod aliquet. In ac pretium odio. Quisque cursus varius maximus. Suspendisse tincidunt est lorem, quis dignissim lacus varius a. Cras porta ante at massa ullamcorper consequat. Suspendisse potenti. Nam dapibus pulvinar ante, eget vulputate nibh feugiat a. Nulla non diam sit amet neque condimentum pretium vel at nisi. Ut eu dapibus risus. In hac habitasse platea dictumst.</h4>
+</div>
+
+<script>
+
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+}
+    </script>
+</body>
+</html>
