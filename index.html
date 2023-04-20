@@ -5,16 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"
-href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 <style>
     .w3-theme {color:#f0d7d7 !important; background-color:#270a38 !important}
     .w3-theme-d2 {color:#fff !important; background-color:#100124 !important}
     .w3-theme-d3 {color:#000 !important; background-color:#4e1137 !important}
-    .w3-allerta {
-        font-family: 'Allena', serif;
-    }
     .w3-tangerine {
   font-family: 'Tangerine', serif;}
     .w3-myfont {
@@ -22,24 +18,9 @@ href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     body {
         background-color: #f5f5dc;
     }
-    #tex {
-        color: antiquewhite;
-        letter-spacing: 5px;
-        text-shadow: 4px 4px 7px rgb(72, 11, 129);
-    }
     #top {
         background-image: linear-gradient(to right,#77157a, #110b4d);
         color: #f0d7d7;
-    }
-    #tex2 {
-      color: antiquewhite;
-    }
-    #tex3 {
-      color: antiquewhite;
-      height: 39%;
-    }
-    #tex5 {
-      color: #eee1c5;
     }
     #tooltip {
       padding: 10px;
@@ -59,42 +40,7 @@ href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     .city {
       color: #f5f5dc;
     }
-    [class*="w3-myfont"] {
-    font-size: 11px;
-  }
-  @media only screen and (min-width: 768px) {
-    .w3-myfont {font-size: 18px;}
-  }
-  [class*="w3-allerta"] {
-    font-size: 10px;
-  }
-  @media only screen and (min-width: 768px) {
-    .w3-allerta {font-size: 25px;}
-  }
-  @media only screen and (max-width: 600px) {
-    #tool {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #too {
-    display: none;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #tooltip {
-    display: none;
-  }
-}
-[class*="w45"] {
-  display: none;
-}
-@media only screen and (max-width: 768px) {
-  #tooo {
-    display: block;
-    font-size: 15px;
-  }
-}
+   
 </style>
 <body>
 <div id="top" class="w3-container w3-center">
@@ -102,12 +48,42 @@ href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 </div>
    
 <div id="img" class="w3-display-container">
- <img src="images/exk.jpg" alt="color" width="100%">
- <div id="tex5" class="w3-padding w3-display-middle"><h4 id="tooo" class="w3-allerta w45">этот текст покажется на маленьком экране</h4></div>
- <div id="tex"  class="w3-padding w3-display-topmiddle w3-mobile"><h3 id="too" class="w3-allerta">Веб-дизайн — вид графического дизайна, направленный на разработку и оформление объектов информационной среды Интернета, призванный обеспечить им высокие потребительские свойства и эстетические качества. Подобная трактовка отделяет веб-дизайн от веб-программирования, подчёркивает специфику предметной деятельности веб-дизайнера, позиционирует веб-дизайн как вид графического дизайна.</h3></div>
- <div id="tex3" class="w3-padding w3-mobile w3-display-bottommiddle"><p id="tooltip" class="w3-border w3-border-red w3-tangerine w3-button w3-round-xxlarge" style="background-color: #100124;">BUTTON</p></div>
- <div id="tex2" class="w3-padding w3-mobile w3-display-bottommiddle"><h5 id="tool" class="w3-myfont">Веб-дизайнеры используют множество различных инструментов в зависимости от того, в какой части производственного процесса они участвуют. Эти инструменты со временем обновляются новыми стандартами и программным обеспечением, но принципы, лежащие в их основе, остаются прежними.</h5></div>
+ <img src="images/exk.jpg" alt="color" width="100%" height="400px%">
 </div>
+
+<div class="w3-container w3-center">
+<h1>tools for web</h1>
+<h3>Tolls</h3>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openOth('k1')">Лондон</button>
+  <button class="w3-bar-item w3-button" onclick="openOth('k2')">Париж</button>
+  <button class="w3-bar-item w3-button" onclick="openOth('k3')">Токио</button>
+</div>
+
+<div id="k1" class="w3-container w3-display-container oth">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>web</h2>
+  <p>1</p>
+</div>
+
+<div id="k2" class="w3-container w3-display-container oth" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>web2</h2>
+  <p>2</p>
+</div>
+
+<div id="k3" class="w3-container w3-display-container oth" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>web3</h2>
+  <p>3</p>
+</div>
+
+</div>
+ 
 
 <div id="text" class="w3-container w3-theme-d3 w3-center w3-border w3-leftbar">   
 <h3 style="color: #eee1c5;">веб-дизайн состоит из:</h3>
@@ -193,6 +169,15 @@ function myAccFunc() {
     x.previousElementSibling.className = 
     x.previousElementSibling.className.replace(" w3-green", "");
   }
+}
+
+function openOth(sideName) {
+  var i;
+  var x = document.getElementsByClassName("oth");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(sideName).style.display = "block";
 }
 
     </script>
