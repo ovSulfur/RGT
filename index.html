@@ -9,9 +9,9 @@
 href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 <style>
-    .w3-theme {color:#f0d7d7 !important; background-color:#240935 !important}
+    .w3-theme {color:#f0d7d7 !important; background-color:#270a38 !important}
     .w3-theme-d2 {color:#fff !important; background-color:#100124 !important}
-    .w3-theme-d3 {color:#000 !important; background-color:#9c216d !important}
+    .w3-theme-d3 {color:#000 !important; background-color:#4e1137 !important}
     .w3-allerta {
         font-family: 'Allena', serif;
     }
@@ -24,23 +24,54 @@ href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     }
     #tex {
         color: antiquewhite;
+        letter-spacing: 5px;
+        text-shadow: 4px 4px 7px rgb(72, 11, 129);
     }
     #top {
-        background-image: linear-gradient(#240935, #371464);
+        background-image: linear-gradient(to right,#77157a, #110b4d);
         color: #f0d7d7;
     }
+    #tex2 {
+      color: antiquewhite;
+    }
+    #tex3 {
+      color: antiquewhite;
+      height: 39%;
+    }
+    #tooltip {
+      padding: 10px;
+      font-size: 30px;
+    }
+    #colonka {
+      background-color: #4e1137;
+      color: #ffffff;
+    }
+    #colonka2 {
+      background-color: #ffffff;
+    }
+    #tx {
+      text-shadow: 6px 6px 7px rgba(57, 8, 121, 0.418);
+      
+    }
+    .city {
+      color: #f5f5dc;
+    }
+    
 </style>
 <body>
 <div id="top" class="w3-container w3-center">
- <h1 class="w3-myfont">Дизайн, как искусство.</h1>
-</div>
-<div id="img" class="w3-display-container">
- <img src="images/exk.jpg" alt="color" width="100%">
- <div id="tex" class="w3-padding w3-display-middle"><h3 class="w3-allerta">Веб-дизайн — вид графического дизайна, направленный на разработку и оформление объектов информационной среды Интернета, призванный обеспечить им высокие потребительские свойства и эстетические качества. Подобная трактовка отделяет веб-дизайн от веб-программирования, подчёркивает специфику предметной деятельности веб-дизайнера, позиционирует веб-дизайн как вид графического дизайна.</h3></div>
+ <h1 id="tx" class="w3-myfont">Дизайн - это мост между функциональностью и эстетикой</h1>
 </div>
 
-<div id="text" class="w3-container w3-theme-d3 w3-center w3-border-red w3-leftbar">   
-<h3>веб-дизайн состоит из:</h3>
+<div id="img" class="w3-display-container">
+ <img src="images/exk.jpg" alt="color" width="100%">
+ <div id="tex" class="w3-padding w3-display-topmiddle w3-mobile"><h3 class="w3-allerta">Веб-дизайн — вид графического дизайна, направленный на разработку и оформление объектов информационной среды Интернета, призванный обеспечить им высокие потребительские свойства и эстетические качества. Подобная трактовка отделяет веб-дизайн от веб-программирования, подчёркивает специфику предметной деятельности веб-дизайнера, позиционирует веб-дизайн как вид графического дизайна.</h3></div>
+ <div id="tex3" class="w3-padding w3-mobile w3-display-bottommiddle "><p id="tooltip" class="w3-border w3-border-red w3-tangerine w3-button w3-round-xxlarge" style="background-color: #100124;">BUTTON</p></div>
+ <div id="tex2" class="w3-padding w3-mobile w3-display-bottommiddle"><h5 class="w3-myfont">Веб-дизайнеры используют множество различных инструментов в зависимости от того, в какой части производственного процесса они участвуют. Эти инструменты со временем обновляются новыми стандартами и программным обеспечением, но принципы, лежащие в их основе, остаются прежними.</h5></div>
+</div>
+
+<div id="text" class="w3-container w3-theme-d3 w3-center w3-border w3-leftbar">   
+<h3 style="color: #eee1c5;">веб-дизайн состоит из:</h3>
 
 <div id="London" class="city" style="display:none">
     <h2>UX-дизайн</h2>
@@ -63,11 +94,43 @@ href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <li><h3>инструменты веб разработчика</h3></li>
     <li>Adobe</li>
     <li>Sketch</li>
+    <li>more</li>
+    <li>more</li>
+    <li>more</li>
+    <li>more</li>
+    <li>more</li>
+    <li>more</li>
   </ul>
 
-
+  <div class="w3-container">
+    <h2 class="w3-center" style="background-color: #f1eee7;">table</h2>
+  <table class="w3-table-all w3-centered w3-hoverable">
+    <thead>
+    <tr id="colonka">
+      <th>CSS</th>
+      <th>JS</th>
+    </tr>
+   </thead>
+    <tr id="colonka2">
+      <td>information for CSS</td>
+      <td>information for JS</td>
+    </tr>
+  </table>
+  </div>
+  <div class="w3-container" style="background-color: #eee1c5;">
+  <div class="w3-container" style="margin-left:160px">
+    <h2>Sidebar</h2>
+    </div>
+    <div class="w3-bar-block w3-light-grey w3-card" style="width:160px;">
+      <a href="#k" class="w3-bar-item w3-button" onclick="myAccFunc()">список<i class="fa fa-caret-down"></i></a>
+      <div id="demoAcc" class="w3-hide">
+        <a href="#k" class="w3-bar-item w3-button">Ссылка</a>
+        <a href="#k" class="w3-bar-item w3-button">Ссылка</a>
+      </div>
+    </div>
+  </div>
 <div id="footer" class="w3-container w3-center w3-theme-d2">
-    <h4 class="w3-myfont ">Fusce non maximus ligula. Donec faucibus volutpat feugiat. Maecenas ornare egestas neque nec ornare. Nunc at libero non urna euismod aliquet. In ac pretium odio. Quisque cursus varius maximus. Suspendisse tincidunt est lorem, quis dignissim lacus varius a. Cras porta ante at massa ullamcorper consequat. Suspendisse potenti. Nam dapibus pulvinar ante, eget vulputate nibh feugiat a. Nulla non diam sit amet neque condimentum pretium vel at nisi. Ut eu dapibus risus. In hac habitasse platea dictumst.</h4>
+    <h4 class="w3-myfont ">footer</h4>
 </div>
 
 <script>
@@ -80,6 +143,19 @@ function openCity(cityName) {
   }
   document.getElementById(cityName).style.display = "block";
 }
+
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-green";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-green", "");
+  }
+}
+
     </script>
 </body>
 </html>
